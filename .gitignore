@@ -1,2 +1,5 @@
-Data/raw/
-Data/Processed/
+Data/raw/*
+!Data/raw/.gitkeep
+
+Data/Processed/*
+!Data/Processed/.gitkeep
