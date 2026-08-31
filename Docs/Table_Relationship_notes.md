@@ -113,3 +113,20 @@
 Seller ZIP prefixes: 1,027 values appeared as 4 digits because the ZIP-prefix column was stored numerically, causing leading zeros to be omitted. Standardized the column to 5-character strings using zero-padding (zfill(5)). No records were removed.
 
 The correct data type to store ZIP codes or postal codes is a string or text data type because storing it as int will remove the intial 0, eg 011123 becomes 11123, simillarly zip codes in UK, Canada also have alphabets, some places it also have - etc
+
+
+### Orders without order-item records
+------------------
+775 orders in the orders table have no corresponding
+records in order_items.
+
+603 → unavailable
+164 → canceled
+5   → created
+2   → invoiced
+1   → shipped
+
+These records are retained because they represent valid
+order records and may be relevant to order-status analysis.
+They will naturally be excluded from item-level analysis
+because no order-item records exist for them.
