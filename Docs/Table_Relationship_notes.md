@@ -130,3 +130,22 @@ These records are retained because they represent valid
 order records and may be relevant to order-status analysis.
 They will naturally be excluded from item-level analysis
 because no order-item records exist for them.
+
+
+
+### Why create three delivery features?
+
+Although `delivery_delay_days`, `is_delivered_late`, and `delivery_status` are based on the same delivery information, they serve different analytical purposes:
+
+* **`delivery_delay_days`** → gives the exact numerical difference between actual and estimated delivery, useful for measuring *how early or late* an order was.
+* **`is_delivered_late`** → converts this into a simple binary indicator (`0/1/NaN`), making it easy to calculate late-delivery rates and use in statistical analysis.
+* **`delivery_status`** → provides a human-readable category such as `delivered_early`, `delivered_on_time`, `delivered_late`, or `not_delivered`, which is more useful for business reporting and visualizations.
+
+Thus, they contain related information but provide **different levels of detail and usability** rather than being redundant.
+
+
+<!-- Seller-level features were created using seller_id to capture seller volume and performance. seller_item_count measures total items handled, seller_order_count measures distinct orders, and seller_total_sales measures total item value. Seller-level validation identified 3,095 sellers and showed a strongly right-skewed distribution, with a small number of high-volume sellers contributing substantially more orders and sales. -->
+
+
+
+freight_percentage was created to measure shipping cost relative to product price. Extremely high values were observed for low-priced products where freight charges substantially exceeded the item price. These values were validated as mathematically correct and were retained as they may provide useful insights into shipping-cost inefficiency.

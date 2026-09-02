@@ -142,3 +142,40 @@
 
   * `product_category_name`
   * `product_category_name_english`
+
+
+  <!-- Geolocation was not incorporated into the analytical dataset because customer and seller ZIP prefixes, cities, and states already provide sufficient geographic information for the planned analysis. Latitude/longitude data would only be required for spatial or distance-based analysis, which is outside the current scope. -->
+
+
+  ### Additional Findings from Final Validation
+
+#### 1. Missing English Category Translations
+
+After merging `product_category_translation` into `item_analysis`, we found:
+
+* `product_category_name` → **1,603 missing values**
+* `product_category_name_english` → **1,627 missing values**
+
+The additional **24 missing English translations** indicate that some records have a valid product category in the original category field, but that category does not have a corresponding entry in the English translation table.
+
+Therefore, these 24 records were **not treated as data errors or removed**. The missing English category is retained as `NaN` because there is no reliable translation available in the source data.
+
+---
+
+#### 2. 942 Missing Reviews in `item_analysis`
+
+The final `item_analysis` contains **942 item rows with no review information**.
+
+This does not mean that 942 reviews are missing from the original review dataset.
+
+Earlier, we found:
+
+* Total orders = **99,441**
+* Orders with reviews = **98,673**
+* Therefore, **768 orders have no review record**
+
+Because `item_analysis` is at the **order-item grain**, those 768 orders can correspond to more than 768 item rows. When represented at the item level, they result in **942 rows with missing review information**.
+
+Therefore, the 942 `NaN` values in the review columns are an expected consequence of the item-level representation and indicate that **no review record was available for the corresponding order**.
+
+These values should not be replaced with `0`, because a missing review is different from a review score of zero.
