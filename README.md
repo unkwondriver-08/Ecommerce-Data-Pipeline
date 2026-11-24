@@ -115,8 +115,16 @@ The dashboard presents executive KPIs and visual analyses covering:
    ```
 
 4. Configure Java and Hadoop prerequisites for the local PySpark environment as described in the project documentation.
-5. Run the notebooks in order, beginning with data inspection and validation, followed by PySpark ETL and business analytics.
-6. Open `PowerBI/ecommerce_performance.pbix` to explore the dashboard.
+
+5. Run the standalone PySpark pipeline:
+
+   ```bash
+   python run_pipeline.py
+   
+6. Run the notebooks in order, beginning with data inspection and validation, followed by PySpark ETL and business analytics.
+
+7. Open `PowerBI/ecommerce_performance.pbix` to explore the dashboard.
+
 
 **Note:** Local paths and environment settings may need adjustment for your machine. Google Cloud Platform and Dataproc are potential future extensions, not part of the currently completed implementation.
 
