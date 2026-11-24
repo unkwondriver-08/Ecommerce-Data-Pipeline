@@ -1,0 +1,208 @@
+2026-11-22 18:09:13,403 | INFO | Loading dataset: Customers
+2026-11-22 18:09:15,082 | INFO | Successfully loaded dataset: Customers
+2026-11-22 18:09:15,083 | INFO | Loading dataset: Orders
+2026-11-22 18:09:15,118 | INFO | Successfully loaded dataset: Orders
+2026-11-22 18:09:15,118 | INFO | Loading dataset: Order Items
+2026-11-22 18:09:15,149 | INFO | Successfully loaded dataset: Order Items
+2026-11-22 18:09:15,149 | INFO | Loading dataset: Payments
+2026-11-22 18:09:15,176 | INFO | Successfully loaded dataset: Payments
+2026-11-22 18:09:15,177 | INFO | Loading dataset: Reviews
+2026-11-22 18:09:15,207 | INFO | Successfully loaded dataset: Reviews
+2026-11-22 18:09:15,383 | INFO | Loading dataset: Products
+2026-11-22 18:09:15,408 | INFO | Successfully loaded dataset: Products
+2026-11-22 18:09:15,408 | INFO | Loading dataset: Sellers
+2026-11-22 18:09:15,436 | INFO | Successfully loaded dataset: Sellers
+2026-11-22 18:09:15,437 | INFO | Loading dataset: Category Translation
+2026-11-22 18:09:15,477 | INFO | Successfully loaded dataset: Category Translation
+2026-11-22 18:09:15,477 | INFO | Loading dataset: Geolocation
+2026-11-22 18:09:15,502 | INFO | Successfully loaded dataset: Geolocation
+2026-11-22 18:09:42,010 | INFO | ========== DATA VALIDATION STARTED ==========
+2026-11-22 18:09:43,239 | INFO | Customers: Primary key validation passed.
+2026-11-22 18:09:45,199 | INFO | Orders: Primary key validation passed.
+2026-11-22 18:09:46,864 | INFO | Order Items: Primary key validation passed.
+2026-11-22 18:09:48,151 | INFO | Payments: Primary key validation passed.
+2026-11-22 18:09:49,096 | INFO | Products: Primary key validation passed.
+2026-11-22 18:09:49,762 | INFO | Sellers: Primary key validation passed.
+2026-11-22 18:09:50,335 | INFO | Category Translation: Primary key validation passed.
+2026-11-22 18:09:51,805 | INFO | Reviews: Primary key validation passed.
+2026-11-22 18:09:52,391 | INFO | Orders → Customers: Foreign key validation passed.
+2026-11-22 18:09:52,923 | INFO | Order Items → Orders: Foreign key validation passed.
+2026-11-22 18:09:53,292 | INFO | Order Items → Products: Foreign key validation passed.
+2026-11-22 18:09:53,551 | INFO | Order Items → Sellers: Foreign key validation passed.
+2026-11-22 18:09:54,058 | INFO | Payments → Orders: Foreign key validation passed.
+2026-11-22 18:09:54,587 | INFO | Reviews → Orders: Foreign key validation passed.
+2026-11-22 18:09:54,777 | INFO | Customers: NULL validation passed.
+2026-11-22 18:09:55,009 | INFO | Orders: NULL validation passed.
+2026-11-22 18:09:55,211 | INFO | Order Items: NULL validation passed.
+2026-11-22 18:09:55,490 | INFO | Payments: NULL validation passed.
+2026-11-22 18:09:55,751 | INFO | Reviews: NULL validation passed.
+2026-11-22 18:09:55,885 | INFO | Products: NULL validation passed.
+2026-11-22 18:09:55,982 | INFO | Sellers: NULL validation passed.
+2026-11-22 18:09:56,102 | INFO | Category Translation: NULL validation passed.
+2026-11-22 18:09:56,275 | INFO | Order Items - Invalid price: Value validation passed.
+2026-11-22 18:09:56,478 | INFO | Order Items - Invalid freight: Value validation passed.
+2026-11-22 18:09:56,701 | INFO | Payments - Invalid payment value: Value validation passed.
+2026-11-22 18:09:56,967 | INFO | Payments - Invalid installments: Value validation passed.
+2026-11-22 18:09:57,250 | INFO | Reviews - Invalid review score: Value validation passed.
+2026-11-22 18:09:57,454 | INFO | Order Items - Invalid item ID: Value validation passed.
+2026-11-22 18:09:57,696 | INFO | Approval before purchase: Passed.
+2026-11-22 18:09:57,885 | WARNING | Carrier pickup before approval | Anomalies: 1359
+2026-11-22 18:09:58,093 | WARNING | Customer delivery before carrier pickup | Anomalies: 23
+2026-11-22 18:09:58,287 | INFO | Customer delivery before purchase: Passed.
+2026-11-22 18:09:58,287 | INFO | ========== DATA VALIDATION COMPLETED ==========
+2026-11-22 18:12:44,540 | INFO | Loading dataset: Customers
+2026-11-22 18:12:44,561 | INFO | Successfully loaded dataset: Customers
+2026-11-22 18:12:44,561 | INFO | Loading dataset: Orders
+2026-11-22 18:12:44,578 | INFO | Successfully loaded dataset: Orders
+2026-11-22 18:12:44,578 | INFO | Loading dataset: Order Items
+2026-11-22 18:12:44,599 | INFO | Successfully loaded dataset: Order Items
+2026-11-22 18:12:44,599 | INFO | Loading dataset: Payments
+2026-11-22 18:12:44,613 | INFO | Successfully loaded dataset: Payments
+2026-11-22 18:12:44,614 | INFO | Loading dataset: Reviews
+2026-11-22 18:12:44,627 | INFO | Successfully loaded dataset: Reviews
+2026-11-22 18:12:44,627 | INFO | Loading dataset: Products
+2026-11-22 18:12:44,642 | INFO | Successfully loaded dataset: Products
+2026-11-22 18:12:44,642 | INFO | Loading dataset: Sellers
+2026-11-22 18:12:44,661 | INFO | Successfully loaded dataset: Sellers
+2026-11-22 18:12:44,661 | INFO | Loading dataset: Category Translation
+2026-11-22 18:12:44,679 | INFO | Successfully loaded dataset: Category Translation
+2026-11-22 18:12:44,680 | INFO | Loading dataset: Geolocation
+2026-11-22 18:12:44,694 | INFO | Successfully loaded dataset: Geolocation
+2026-11-22 18:12:58,743 | INFO | ========== DATA VALIDATION STARTED ==========
+2026-11-22 18:12:59,660 | INFO | Customers: Primary key validation passed.
+2026-11-22 18:13:00,617 | INFO | Orders: Primary key validation passed.
+2026-11-22 18:13:01,629 | INFO | Order Items: Primary key validation passed.
+2026-11-22 18:13:02,642 | INFO | Payments: Primary key validation passed.
+2026-11-22 18:13:03,351 | INFO | Products: Primary key validation passed.
+2026-11-22 18:13:03,898 | INFO | Sellers: Primary key validation passed.
+2026-11-22 18:13:04,279 | INFO | Category Translation: Primary key validation passed.
+2026-11-22 18:13:05,550 | INFO | Reviews: Primary key validation passed.
+2026-11-22 18:13:06,059 | INFO | Orders → Customers: Foreign key validation passed.
+2026-11-22 18:13:06,478 | INFO | Order Items → Orders: Foreign key validation passed.
+2026-11-22 18:13:06,813 | INFO | Order Items → Products: Foreign key validation passed.
+2026-11-22 18:13:07,066 | INFO | Order Items → Sellers: Foreign key validation passed.
+2026-11-22 18:13:07,507 | INFO | Payments → Orders: Foreign key validation passed.
+2026-11-22 18:13:08,010 | INFO | Reviews → Orders: Foreign key validation passed.
+2026-11-22 18:13:08,202 | INFO | Customers: NULL validation passed.
+2026-11-22 18:13:08,400 | INFO | Orders: NULL validation passed.
+2026-11-22 18:13:08,637 | INFO | Order Items: NULL validation passed.
+2026-11-22 18:13:08,908 | INFO | Payments: NULL validation passed.
+2026-11-22 18:13:09,184 | INFO | Reviews: NULL validation passed.
+2026-11-22 18:13:09,339 | INFO | Products: NULL validation passed.
+2026-11-22 18:13:09,467 | INFO | Sellers: NULL validation passed.
+2026-11-22 18:13:09,540 | INFO | Category Translation: NULL validation passed.
+2026-11-22 18:13:09,698 | INFO | Order Items - Invalid price: Value validation passed.
+2026-11-22 18:13:09,907 | INFO | Order Items - Invalid freight: Value validation passed.
+2026-11-22 18:13:10,100 | INFO | Payments - Invalid payment value: Value validation passed.
+2026-11-22 18:13:10,279 | INFO | Payments - Invalid installments: Value validation passed.
+2026-11-22 18:13:10,532 | INFO | Reviews - Invalid review score: Value validation passed.
+2026-11-22 18:13:10,713 | INFO | Order Items - Invalid item ID: Value validation passed.
+2026-11-22 18:13:10,920 | INFO | Approval before purchase: Passed.
+2026-11-22 18:13:11,102 | WARNING | Carrier pickup before approval | Anomalies: 1359
+2026-11-22 18:13:11,274 | WARNING | Customer delivery before carrier pickup | Anomalies: 23
+2026-11-22 18:13:11,446 | INFO | Customer delivery before purchase: Passed.
+2026-11-22 18:13:11,447 | INFO | ========== DATA VALIDATION COMPLETED ==========
+2026-11-22 19:58:23,885 | INFO | Loading dataset: Customers
+2026-11-22 19:58:25,455 | INFO | Successfully loaded dataset: Customers
+2026-11-22 19:58:25,456 | INFO | Loading dataset: Orders
+2026-11-22 19:58:25,486 | INFO | Successfully loaded dataset: Orders
+2026-11-22 19:58:25,487 | INFO | Loading dataset: Order Items
+2026-11-22 19:58:25,513 | INFO | Successfully loaded dataset: Order Items
+2026-11-22 19:58:25,513 | INFO | Loading dataset: Payments
+2026-11-22 19:58:25,544 | INFO | Successfully loaded dataset: Payments
+2026-11-22 19:58:25,544 | INFO | Loading dataset: Reviews
+2026-11-22 19:58:25,573 | INFO | Successfully loaded dataset: Reviews
+2026-11-22 19:58:25,573 | INFO | Loading dataset: Products
+2026-11-22 19:58:25,599 | INFO | Successfully loaded dataset: Products
+2026-11-22 19:58:25,600 | INFO | Loading dataset: Sellers
+2026-11-22 19:58:25,627 | INFO | Successfully loaded dataset: Sellers
+2026-11-22 19:58:25,627 | INFO | Loading dataset: Category Translation
+2026-11-22 19:58:25,657 | INFO | Successfully loaded dataset: Category Translation
+2026-11-22 19:58:25,657 | INFO | Loading dataset: Geolocation
+2026-11-22 19:58:25,850 | INFO | Successfully loaded dataset: Geolocation
+2026-11-22 19:58:50,406 | INFO | ========== DATA VALIDATION STARTED ==========
+2026-11-22 19:58:51,456 | INFO | Customers: Primary key validation passed.
+2026-11-22 19:58:52,751 | INFO | Orders: Primary key validation passed.
+2026-11-22 19:58:53,796 | INFO | Order Items: Primary key validation passed.
+2026-11-22 19:58:55,294 | INFO | Payments: Primary key validation passed.
+2026-11-22 19:58:55,974 | INFO | Products: Primary key validation passed.
+2026-11-22 19:58:56,709 | INFO | Sellers: Primary key validation passed.
+2026-11-22 19:58:57,073 | INFO | Category Translation: Primary key validation passed.
+2026-11-22 19:58:58,298 | INFO | Reviews: Primary key validation passed.
+2026-11-22 19:58:59,114 | INFO | Orders → Customers: Foreign key validation passed.
+2026-11-22 19:58:59,584 | INFO | Order Items → Orders: Foreign key validation passed.
+2026-11-22 19:58:59,995 | INFO | Order Items → Products: Foreign key validation passed.
+2026-11-22 19:59:00,258 | INFO | Order Items → Sellers: Foreign key validation passed.
+2026-11-22 19:59:00,721 | INFO | Payments → Orders: Foreign key validation passed.
+2026-11-22 19:59:01,278 | INFO | Reviews → Orders: Foreign key validation passed.
+2026-11-22 19:59:01,489 | INFO | Customers: NULL validation passed.
+2026-11-22 19:59:01,738 | INFO | Orders: NULL validation passed.
+2026-11-22 19:59:02,129 | INFO | Order Items: NULL validation passed.
+2026-11-22 19:59:02,443 | INFO | Payments: NULL validation passed.
+2026-11-22 19:59:02,662 | INFO | Reviews: NULL validation passed.
+2026-11-22 19:59:02,791 | INFO | Products: NULL validation passed.
+2026-11-22 19:59:02,876 | INFO | Sellers: NULL validation passed.
+2026-11-22 19:59:02,972 | INFO | Category Translation: NULL validation passed.
+2026-11-22 19:59:03,171 | INFO | Order Items - Invalid price: Value validation passed.
+2026-11-22 19:59:03,333 | INFO | Order Items - Invalid freight: Value validation passed.
+2026-11-22 19:59:03,665 | INFO | Payments - Invalid payment value: Value validation passed.
+2026-11-22 19:59:04,081 | INFO | Payments - Invalid installments: Value validation passed.
+2026-11-22 19:59:04,261 | INFO | Reviews - Invalid review score: Value validation passed.
+2026-11-22 19:59:04,426 | INFO | Order Items - Invalid item ID: Value validation passed.
+2026-11-22 19:59:04,807 | INFO | Approval before purchase: Passed.
+2026-11-22 19:59:05,002 | WARNING | Carrier pickup before approval | Anomalies: 1359
+2026-11-22 19:59:05,187 | WARNING | Customer delivery before carrier pickup | Anomalies: 23
+2026-11-22 19:59:05,425 | INFO | Customer delivery before purchase: Passed.
+2026-11-22 19:59:05,425 | INFO | ========== DATA VALIDATION COMPLETED ==========
+2026-11-24 10:33:25,194 | INFO | Loading dataset: Customers
+2026-11-24 10:33:29,259 | INFO | Successfully loaded dataset: Customers
+2026-11-24 10:33:29,259 | INFO | Loading dataset: Orders
+2026-11-24 10:33:29,338 | INFO | Successfully loaded dataset: Orders
+2026-11-24 10:33:29,338 | INFO | Loading dataset: Order Items
+2026-11-24 10:33:29,413 | INFO | Successfully loaded dataset: Order Items
+2026-11-24 10:33:29,414 | INFO | Loading dataset: Payments
+2026-11-24 10:33:29,490 | INFO | Successfully loaded dataset: Payments
+2026-11-24 10:33:29,491 | INFO | Loading dataset: Reviews
+2026-11-24 10:33:29,613 | INFO | Successfully loaded dataset: Reviews
+2026-11-24 10:33:29,615 | INFO | Loading dataset: Products
+2026-11-24 10:33:29,709 | INFO | Successfully loaded dataset: Products
+2026-11-24 10:33:29,709 | INFO | Loading dataset: Sellers
+2026-11-24 10:33:29,770 | INFO | Successfully loaded dataset: Sellers
+2026-11-24 10:33:29,771 | INFO | Loading dataset: Category Translation
+2026-11-24 10:33:29,834 | INFO | Successfully loaded dataset: Category Translation
+2026-11-24 10:33:29,835 | INFO | Loading dataset: Geolocation
+2026-11-24 10:33:29,891 | INFO | Successfully loaded dataset: Geolocation
+2026-11-24 10:34:24,648 | INFO | ========== DATA VALIDATION STARTED ==========
+2026-11-24 10:34:26,991 | INFO | Customers: Primary key validation passed.
+2026-11-24 10:34:29,331 | INFO | Orders: Primary key validation passed.
+2026-11-24 10:34:32,277 | INFO | Order Items: Primary key validation passed.
+2026-11-24 10:34:35,024 | INFO | Payments: Primary key validation passed.
+2026-11-24 10:34:37,079 | INFO | Products: Primary key validation passed.
+2026-11-24 10:34:38,636 | INFO | Sellers: Primary key validation passed.
+2026-11-24 10:34:39,473 | INFO | Category Translation: Primary key validation passed.
+2026-11-24 10:34:42,463 | INFO | Reviews: Primary key validation passed.
+2026-11-24 10:34:44,122 | INFO | Orders → Customers: Foreign key validation passed.
+2026-11-24 10:34:45,257 | INFO | Order Items → Orders: Foreign key validation passed.
+2026-11-24 10:34:46,145 | INFO | Order Items → Products: Foreign key validation passed.
+2026-11-24 10:34:46,946 | INFO | Order Items → Sellers: Foreign key validation passed.
+2026-11-24 10:34:48,278 | INFO | Payments → Orders: Foreign key validation passed.
+2026-11-24 10:34:49,546 | INFO | Reviews → Orders: Foreign key validation passed.
+2026-11-24 10:34:50,103 | INFO | Customers: NULL validation passed.
+2026-11-24 10:34:50,666 | INFO | Orders: NULL validation passed.
+2026-11-24 10:34:51,254 | INFO | Order Items: NULL validation passed.
+2026-11-24 10:34:51,887 | INFO | Payments: NULL validation passed.
+2026-11-24 10:34:52,526 | INFO | Reviews: NULL validation passed.
+2026-11-24 10:34:52,887 | INFO | Products: NULL validation passed.
+2026-11-24 10:34:53,084 | INFO | Sellers: NULL validation passed.
+2026-11-24 10:34:53,283 | INFO | Category Translation: NULL validation passed.
+2026-11-24 10:34:53,677 | INFO | Order Items - Invalid price: Value validation passed.
+2026-11-24 10:34:54,079 | INFO | Order Items - Invalid freight: Value validation passed.
+2026-11-24 10:34:54,526 | INFO | Payments - Invalid payment value: Value validation passed.
+2026-11-24 10:34:54,992 | INFO | Payments - Invalid installments: Value validation passed.
+2026-11-24 10:34:55,495 | INFO | Reviews - Invalid review score: Value validation passed.
+2026-11-24 10:34:56,022 | INFO | Order Items - Invalid item ID: Value validation passed.
+2026-11-24 10:34:56,619 | INFO | Approval before purchase: Passed.
+2026-11-24 10:34:57,158 | WARNING | Carrier pickup before approval | Anomalies: 1359
+2026-11-24 10:34:57,624 | WARNING | Customer delivery before carrier pickup | Anomalies: 23
+2026-11-24 10:34:58,132 | INFO | Customer delivery before purchase: Passed.
+2026-11-24 10:34:58,133 | INFO | ========== DATA VALIDATION COMPLETED ==========
